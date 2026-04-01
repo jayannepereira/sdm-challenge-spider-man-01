@@ -1,0 +1,25 @@
+info:
+  name: Criar Dados
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5202/api/Missoes
+  body:
+    type: json
+    data: |-
+      {
+        "Id": 3,
+        "vilaoEnfrentado": "Venom",
+        "localizacao": "Queens",
+        "nivelPerigo": 12,
+        "resolvido": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
